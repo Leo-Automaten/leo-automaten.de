@@ -1,0 +1,1284 @@
+body {
+    font-family: sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.website-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #dadce0; /* Background color for the header */
+    color: #323741; /* Text color for the header */
+    margin: 0;
+    width: 100%;  
+}    
+header a {
+    color: #fff;
+    /* You can add more styles as needed */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.contact-info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tel-header i, .mail-header i {
+    margin-right: 5px;
+}
+
+.tel-header, .mail-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-top: 20%;
+}
+
+.mail-header a {
+    color: #000; /* Black color */
+    text-decoration: underline; /* Underline the link text */
+    font-size: 18px;
+}
+
+
+
+.dropdown{
+    min-width: 9.5em;
+    position: relative;
+    margin: 1em 0.5em;
+    box-sizing: border-box;
+}
+.select{
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+}
+.select-clicked{
+    border: 2px #2a2f3b solid;
+    box-shadow: 0 0 0.8em #26489a;
+    font-size: 15px;
+}
+.select:hover{
+    background: #323741;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 120%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover{
+    background: #2a2d35;
+}
+.active{
+    background: #23242a;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+
+footer {
+    background-color: #dadce0;
+    color: #323741;
+    padding: 20px;
+    display: flex;
+}
+
+.contact-info-footer {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: 7%; 
+    margin-top: 50px;
+}
+
+.name-footer {
+    margin-bottom: 10px; /* Add space between each info item */
+}
+.street-footer {
+    margin-bottom: 10px; /* Add space between each info item */
+}
+.location-footer {
+    margin-bottom: 10px; /* Add space between each info item */
+}
+.tel-footer {
+    margin-bottom: 10px; /* Add space between each info item */
+}
+.mail-footer {
+    margin-bottom: 10px; /* Add space between each info item */
+}
+
+.more-infos-footer {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.weitere-informationen{
+    margin-bottom: 10px;
+}
+.startseite{
+    margin-bottom: 10px;
+}
+.impressum{
+    margin-bottom: 10px;
+}
+.logo-footer img{
+    width: 350px;
+    height: auto;
+    margin-left: 20%;
+}
+
+.slogan-footer {
+    margin-top: 100px;
+    margin-left: 10%;
+    font-size: 35px;
+} 
+
+.fill-out-phone{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.fill-out-anrufzeit{
+    margin-left: 25px;
+} 
+.fill-out-mail{
+    margin-left: 25px;
+}
+.fill-out-straße{
+    margin-left: 25px;
+}
+
+.fill-out-message {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.fill-out-message label {
+    margin-bottom: 5px;
+}
+
+.fill-out-message textarea {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 700px; /* Set a maximum width */
+    height: 200px;
+    display: block; /* Make it a block element */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.fill-out-form-contact{
+    margin-left: 30%;
+}
+.fill-out-betrieb input{
+    margin-left: 169px;
+    width: 300px;
+    padding:5px;
+}
+.fill-out-betrieb label{
+    margin-left: -50px;
+}
+.fill-out-name{
+    margin-top: 20px;
+}
+.fill-out-name input{
+    margin-left: 110px;
+    margin-right: 10px;
+    width: 300px;
+    padding:5px;
+}
+.fill-out-name label{
+    margin-left: -50px;
+}
+.fill-out-ort{
+    margin-top: 20px;
+}
+.fill-out-ort input{
+    margin-left: 169px;
+    width: 300px;
+    padding:5px;
+}
+.fill-out-ort label{
+    margin-left: -50px;
+}
+.fill-out-phone label{
+    margin-left: -30px;
+}
+.fill-out-rückruf{
+    margin-top: 50px;
+    margin-left: -90px;
+} 
+.fill-out-phone input{
+    margin-left: 104px;
+    width: 300px;
+    padding:5px;
+}
+.fill-out-phone label{
+    margin-left: -85px;
+}
+.fill-out-anrufzeit{
+    margin-top: 20px;
+}
+.fill-out-anrufzeit input{
+    margin-left: 62px;
+    width: 300px;
+    padding:5px;
+}
+.fill-out-anrufzeit label{
+    margin-left: -85px;
+}
+.fill-out-kontakt-mail{
+    margin-top: 50px;
+}
+.fill-out-kontakt-mail input{
+    margin-left: -85px;
+}
+.fill-out-mail input{
+    margin-left: 202px;
+    width: 300px;
+    padding:5px;
+    margin-top: 20px;
+}
+.fill-out-mail label{
+    margin-left: -80px;
+}
+.fill-out-schriftlich{
+    margin-top: 50px;
+}
+.fill-out-schriftlich input{
+    margin-left: -89px;
+    
+}
+.fill-out-straße input{
+    margin-left: 198px;
+    
+    width: 300px;
+    padding: 5px;
+    
+    margin-top: 20px;
+}
+.fill-out-straße label{
+    margin-left: -80px;
+    
+}
+.fill-out-form-contact p{
+    margin-left: -70px;
+}
+.fill-out-heiß input{
+    margin-left: -70px;
+}
+.fill-out-füll input{
+    margin-left: -70px;
+}
+#kalt { /* Target the checkbox element by its ID */
+    margin-top: 10px; /* Adjust the top margin to move it down */
+    margin-left: 95px; /* Adjust the left margin to move it right */
+}
+
+/* Style the associated label for better alignment */
+label[for="kalt"] {
+    margin-left: 3px; /* Adjust the left margin for the label */
+}
+#snack { /* Target the checkbox element by its ID */
+    margin-top: 10px; /* Adjust the top margin to move it down */
+    margin-left: 95px; /* Adjust the left margin to move it right */
+}
+
+/* Style the associated label for better alignment */
+label[for="snack"] {
+    margin-left: 3px; /* Adjust the left margin for the label */
+}
+#tech { /* Target the checkbox element by its ID */
+    margin-top: 10px; /* Adjust the top margin to move it down */
+    margin-left: 179px; /* Adjust the left margin to move it right */
+}
+
+/* Style the associated label for better alignment */
+label[for="tech"] {
+    margin-left: 10px; /* Adjust the left margin for the label */
+}
+#sonstiges { /* Target the checkbox element by its ID */
+    margin-top: 10px; /* Adjust the top margin to move it down */
+    margin-left: 100px; /* Adjust the left margin to move it right */
+}
+
+/* Style the associated label for better alignment */
+label[for="sonstiges"] {
+    margin-left: 3px; /* Adjust the left margin for the label */
+}
+.fill-out-kauf input{
+    margin-left: -70px;
+}
+#leasing { /* Target the checkbox element by its ID */
+    margin-top: 10px; /* Adjust the top margin to move it down */
+    margin-left: 235px; /* Adjust the left margin to move it right */
+}
+
+/* Style the associated label for better alignment */
+label[for="leasing"] {
+    margin-left: 3px; /* Adjust the left margin for the label */
+}
+.fill-out-message{
+    margin-top: 100px;
+    margin-right: 30%;
+    
+}
+.fill-out-button button{
+    margin-right: -30%;
+    margin-top: 20px;
+} 
+
+.fill-out-button button {
+    background-color:  #FF0000; /* Choose a color that stands out */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 17px; /* Adjust border radius as needed */
+    padding: 15px 30px; /* Increase padding for a larger button */
+    font-size: 18px; /* Increase font size for larger text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadows for a raised effect */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a hover effect */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.fill-out-button button:hover {
+    background-color: #fff; /* Change color on hover for interaction */
+    color: #FF0000;
+    transform: scale(1.05); /* Grow in size on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.9);
+}     
+.fill-out-form-contact{
+    margin-top: 100px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #363a43;
+}
+.mail-header a{
+    text-decoration: none;
+    color: #26489a;
+}
+
+.interesse-automaten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fill-out-heiß,
+.fill-out-füll {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fill-out-heiß input,
+.fill-out-füll input {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.fill-out-button{
+    margin-right: 600px;
+    margin-left: -20px;
+    margin-left: 110px;
+}
+
+.fill-out-füll #leasing{
+    margin-left: 225px;
+}
+.fill-out-heiß #snack{
+    margin-left: 43px;
+}
+
+.interesse-newsletter{
+    margin-top: 50px;
+    
+}
+#interesse-newsletter-tag{
+    font-size: 26px;
+}
+
+/* Aligning checkboxes and labels vertically */
+/* Aligning checkboxes and labels vertically */
+/* CSS for aligning checkboxes and labels */
+.interesse-automaten {
+    /* Assuming 300px width for the labels, adjust according to your needs */
+    max-width: 300px;
+}
+
+/* Aligning checkboxes and labels vertically */
+
+
+.fill-out-automaten label{
+    font-size: 23px;
+}
+.fill-out-automaten{
+    margin-left: -7%;
+}
+
+.fill-out-message label{
+    font-size: 23px;
+}
+.fill-out-message{
+    margin-left: -10%;
+}
+
+
+
+@media (min-width:2000px) and (max-width:2775px) {
+    .logo-big-image{
+        margin-top: 50px;
+        margin-top: -30%;
+    }
+    .menu a{
+        font-size: 23px;
+    }
+    .dropdown .select{
+        font-size: 23px;
+    }
+    .menu{
+        width: 180%;
+    }
+    .logo img{
+        width: 350px;
+        height: auto;
+    }
+    .tel-header{
+        font-size: 26px;
+    }
+    .mail-header a{
+        font-size: 26px;
+    }
+    .name-footer{
+        font-size: 26px;
+    }
+    .tel-footer{
+        font-size: 26px;
+    }
+    .mail-footer{
+        font-size: 26px;
+    }
+    .more-infos-footer{
+        font-size: 26px;
+        margin-left: 10%;
+    }
+    .slogan-footer{
+        font-size: 30px;
+        margin-left: 20%;
+    }
+    .logo-footer{
+        margin-left: 10%;
+    }
+    .logo-footer img{
+        width: 400px;
+        height: auto;
+    }
+    .logo-big-image img{
+        width: 700px;
+        height: auto;
+    }
+    .aufstellgebiet-part1{
+        margin-left: 15%;
+    }
+    .aufstellgebiet-titel{
+        margin-left: -10%;
+    }
+    .fill-out-form-contact{
+        margin-left: 40%;
+    }
+    .fill-out-betrieb label{
+        font-size: 25px;
+    }
+    .fill-out-name label{
+        font-size: 25px;
+    }
+    .fill-out-ort label{
+        font-size: 25px;
+    }
+    .fill-out-rückruf label{
+        font-size: 25px;
+    }
+    .fill-out-phone label{
+        font-size: 25px;
+    }
+    .fill-out-anrufzeit label{
+        font-size: 25px;
+    }
+    .fill-out-mail label{
+        font-size: 25px;
+    }
+    .fill-out-kontakt-mail label{
+        font-size: 25px;
+    }    
+    .fill-out-schriftlich label{
+        font-size: 25px;
+    }
+    .fill-out-straße label{
+        font-size: 25px;
+    }
+    #interesse-form-tag{
+        font-size: 25px;
+    }
+    .interesse-automaten label{
+        font-size: 25px;
+    }
+    .fill-out-füll{
+        font-size: 25px;
+    }
+    .fill-out-heiß{
+        font-size: 25px;
+    }
+    .fill-out-betrieb input{
+        margin-left: 180px;
+    }
+    .fill-out-ort input{
+        margin-left: 200px;
+    }
+    .fill-out-name input{
+        margin-left: 120px;
+    }
+    .fill-out-anrufzeit input{
+        margin-left: 40px;
+    }
+    .fill-out-mail input{
+        margin-left: 270px;
+    }
+    .fill-out-straße input{
+        margin-left: 270px;
+    }
+    .fill-out-füll input#tech{
+        margin-left: 225px;
+    }
+    .fill-out-füll input#sonstiges{
+        margin-left: 215px;
+    }
+    .fill-out-kauf input#leasing{
+        margin-left: 320px;
+    }
+    .fill-out-button button{
+        font-size: 23px;
+    }
+    input#füll[type="checkbox"] {
+        /* Your styles for the 'Füllprodukte' checkbox */
+        /* For example: */
+        margin-top: 10px;
+        /* Add your specific styles here */
+    }
+    input#leasing[type="checkbox"] {
+        /* Your styles for the 'Leasing' checkbox */
+        /* For example: */
+        margin-top: 10px;
+        /* Add your specific styles here */
+    }
+    input#sonstiges[type="checkbox"] {
+        /* Your styles for the 'Sonstiges' checkbox */
+        /* For example: */
+        margin-top: 10px;
+        /* Add your specific styles here */
+    }
+    .fill-out-message{
+        margin-right: 40%;
+        
+    }
+    .interesse-newsletter{
+        margin-right: 40%;
+    }
+    .fill-out-service{
+        margin-right: 420px;
+    }
+}
+@media (min-width:1527px) and (max-width:1999px) {
+    .fill-out-betrieb label{
+        font-size: 25px;
+    }
+    .fill-out-name label{
+        font-size: 25px;
+    }
+    .fill-out-ort label{
+        font-size: 25px;
+    }
+    .fill-out-rückruf label{
+        font-size: 25px;
+    }
+    .fill-out-phone label{
+        font-size: 25px;
+    }
+    .fill-out-anrufzeit label{
+        font-size: 25px;
+    }
+    .fill-out-mail label{
+        font-size: 25px;
+    }
+    .fill-out-kontakt-mail label{
+        font-size: 25px;
+    }    
+    .fill-out-schriftlich label{
+        font-size: 25px;
+    }
+    .fill-out-straße label{
+        font-size: 25px;
+    }
+    #interesse-form-tag{
+        font-size: 25px;
+    }
+    .interesse-automaten label{
+        font-size: 25px;
+    }
+    .fill-out-füll{
+        font-size: 25px;
+    }
+    .fill-out-heiß{
+        font-size: 25px;
+    }
+    .fill-out-betrieb input{
+        margin-left: 180px;
+    }
+    .fill-out-ort input{
+        margin-left: 200px;
+    }
+    .fill-out-name input{
+        margin-left: 120px;
+    }
+    .fill-out-anrufzeit input{
+        margin-left: 40px;
+    }
+    .fill-out-mail input{
+        margin-left: 270px;
+    }
+    .fill-out-straße input{
+        margin-left: 270px;
+    }
+    .fill-out-füll input#tech{
+        margin-left: 225px;
+    }
+    .fill-out-füll input#sonstiges{
+        margin-left: 215px;
+    }
+    .fill-out-kauf input#leasing{
+        margin-left: 320px;
+    }
+    .fill-out-button button{
+        font-size: 23px;
+    }
+    .slogan-footer span{
+        font-size: 35px;
+    }
+    .interesse-newsletter{
+        margin-right: 40%;
+    }
+}
+
+@media (min-width:1440px) and (max-width:1526px) {
+    .logo-big-image img{
+        width: 600px;
+        height: auto;
+    }
+    .slogan-footer{
+        font-size: 23px;
+    }
+    footer{
+        width: 110%;
+    }
+    header{
+        width: 115%;
+    }
+    
+    input#leasing[type="checkbox"] {
+        /* Your styles for the 'Sonstiges' checkbox */
+        /* For example: */
+        margin-top: -15px;
+        
+        margin-left: 180px;
+        /* Add your specific styles here */
+    }
+    input#sonstiges[type="checkbox"]{
+        margin-left: 150px;
+        margin-top: -15px;
+    }
+    input#füll[type="checkbox"] {
+        margin-top: -10px;
+    }
+    input#snack[type="checkbox"] {
+        margin-top: 5px;
+    }
+    input#kalt[type="checkbox"] {
+        margin-top: 5px;
+    }
+    .fill-out-message textarea {
+        width: 600px; 
+    }  
+    .fill-out-button button{
+        width: 250px;
+        
+    } 
+    .fill-out-message{
+        margin-left: -50px;
+    }
+    .fill-out-form-contact{
+        margin-left: 40%;
+    }
+    #interesse-newsletter-tag{
+        font-size: 17px;
+    }
+    .interesse-newsletter{
+        margin-right: 20%;
+    }
+    .fill-out-automaten label{
+        font-size: 17px;
+    }
+    .fill-out-straße input{
+        margin-left: 190px;
+    }
+    .fill-out-message label{
+        font-size: 17px;
+    }
+    
+}
+@media (min-width:1024px) and (max-width:1439px) {
+    .logo-big-image{
+        margin-left: 95%;
+    }
+    header{
+        width: 170%;
+    }
+    footer{
+        width: 165%;
+    }
+    .logo-footer{
+        margin-left: 10%;
+    }
+    .more-infos-footer{
+        margin-left: 10%;
+    }
+    .aufstellgebiet-part1{
+        margin-left: 30%;
+    }
+    .aufstellgebiet-titel{
+        margin-left: 40%;
+    }
+    form{
+        margin-left: 30%;
+    }
+    .slogan-footer span{
+        font-size: 23px;
+    }
+    .fill-out-button button{
+        width: 250px;
+    }
+    .fill-out-form-contact{
+        margin-left: 40%;
+    }
+    .logo-footer{
+        margin-left: -20px;
+        padding-right: 200px;
+    }
+    .fill-out-message{
+        margin-left: 10%;
+        margin-left: -50px;
+    }
+    #interesse-newsletter-tag{
+        font-size: 17px;
+    }
+    .fill-out-automaten label{
+        font-size: 17px;
+    }
+    .fill-out-straße input{
+        margin-left: 165px;
+    }
+    .fill-out-mail input{
+        margin-left: 165px;
+    }
+    .fill-out-message label{
+        font-size: 17px;
+    }
+    .fill-out-anrufzeit input{
+        margin-left: 57px;
+    }
+    .fill-out-phone input{
+        margin-left: 100px;
+    }
+    .fill-out-ort input{
+        margin-left: 167px;
+    }
+    .fill-out-betrieb input{
+        margin-left: 157px;
+    }
+}
+@media (min-width:1025px) and (max-width:1200px) {
+    #interesse-newsletter-tag{
+        font-size: 17px;
+    }
+    .fill-out-name input{
+        margin-left: 160px;
+    }
+    .fill-out-ort input{
+        margin-left: 160px;
+    }
+    .fill-out-phone input{
+        margin-left: 130px;
+    }
+    .fill-out-anrufzeit input{
+        margin-left: 130px;
+    }
+    .fill-out-mail input{
+        margin-left: 130px;
+    }
+    .fill-out-straße input{
+        margin-left: 130px;
+    }
+    .fill-out-message textarea{
+        width: 600px;
+    }
+    .interesse-newsletter{
+        margin-right: 50%;
+    }
+    .interesse-automaten{
+        margin-top: 50px;
+    }
+    #interesse-form-tag{
+        margin-top: 50px;
+    }
+    input#kalt[type="checkbox"] {
+        margin-top: 2px;
+    }
+    input#snack[type="checkbox"] {
+        margin-left: 225px;
+        margin-top: 2px;
+    }
+    input#leasing[type="checkbox"] {
+        margin-left: 180px;
+        margin-top: -3px;
+    }
+    input#füll[type="checkbox"] {
+        margin-top: 3px;
+    }
+    #sonstiges{
+        margin-left: 30px;
+    }
+    
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .slogan-footer{
+        margin-left: -10px;
+        font-size: 18px;
+    }
+    .location-footer{
+        margin-left: -10px;
+    }
+    .logo-big-image{
+        display: none;
+    }
+
+    .interesse-automaten {
+        display: flex;
+        flex-direction: column;
+    }
+    .fill-out-form-contact{
+        margin-left: 20%;
+    }
+    
+    .fill-out-heiß input#heiß{
+        margin-top: -5px;
+    }
+    .fill-out-heiß input#kalt{
+        margin-top: -15px;
+    }
+    .fill-out-füll input#leasing{
+        margin-top: -5px;
+        margin-left: 180px;
+    }
+    .fill-out-füll input#sonstiges{
+        margin-left: 150px;
+        margin-top: -5px;
+    }
+    .fill-out-heiß input#snack{
+        margin-top: -10px;
+    }
+    .fill-out-button button{
+        width: 250px;
+    }
+    .fill-out-automaten label{
+        font-size: 17px;
+    }
+    .fill-out-message label{
+        font-size: 17px;
+    }
+}
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    margin-top: -10px;
+}
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, 8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #9fa5b5;
+    width: 35%;
+    height: auto;
+    border-radius: 17px;
+    margin-left: 60%;
+}
+.mobile-menu li{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width:1023px) {
+    .dropdown{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
+}
+@media (min-width:425px) and (max-width:767px) {
+    .logo-big-image{
+        display: none;
+    }
+    .tel-header{
+        font-size: 15px;
+    }
+    .mail-header a{
+        font-size: 15px;
+    }
+    .mail-header{
+        margin-left: -20px;
+    }
+    #hamburger-icon{
+        margin-left: -50px;
+    }
+    .mobile-menu{
+        margin-left: -10px;
+        margin-left: 55%;
+        font-size: 14px;
+    }
+    .logo-footer{
+        margin-left: -100%;
+        margin-top: 150px;
+    }
+    .slogan-footer{
+        margin-top: 250px;
+        font-size: 20px;
+        margin-left: -20px;
+        margin-left: 10px;
+    }
+    .fill-out-name input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-betrieb input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-ort input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-phone input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-anrufzeit input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-mail input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-mail label{
+        padding-right: 40px;
+    }
+    .fill-out-straße input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-straße label{
+        padding-right: 40px;
+    }
+
+    .interesse-automaten {
+        display:inline-block;
+        
+    }
+    
+    .fill-out-automaten label{
+        font-size: 15px;
+    }
+    .fill-out-message label{
+        font-size: 15px;
+    }
+    .fill-out-button{
+        margin-left: 10%;
+    }
+}
+@media (min-width:375px) and (max-width:424px) {
+    .logo-big-image{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+    .tel-header{
+        font-size: 15px;
+    }
+    .mail-header a{
+        font-size: 15px;
+    }
+    .mail-header{
+        margin-left: -15px;
+    }
+    #hamburger-icon{
+        margin-left: -50px;
+    }
+    .mobile-menu{
+        margin-left: -10px;
+        margin-left: 55%;
+        font-size: 12px;
+    }
+    .logo-footer{
+        margin-left: -120%;
+        margin-top: 150px;
+    }
+    .slogan-footer{
+        margin-top: 250px;
+        font-size: 20px;
+        margin-left: -20px;
+        margin-left: 10px;
+    }
+    .fill-out-name input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-betrieb input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-ort input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-phone input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-anrufzeit input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-mail input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-mail label{
+        padding-right: 40px;
+    }
+    .fill-out-straße input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-straße label{
+        padding-right: 40px;
+    }
+
+    .interesse-automaten {
+        display:inline-block;
+        
+    }
+    
+    .fill-out-automaten label{
+        font-size: 15px;
+    }
+    .fill-out-message label{
+        font-size: 15px;
+    }
+    .fill-out-button{
+        margin-left: 10%;
+    }
+}
+@media (min-width:320px) and (max-width:374px) {
+    .logo-big-image{
+        display: none;
+    }
+    .tel-header{
+        font-size: 15px;
+    }
+    .mail-header a{
+        font-size: 15px;
+    }
+    .mail-header{
+        margin-left: -25px;
+    }
+    #hamburger-icon{
+        margin-left: -50px;
+    }
+    .mobile-menu{
+        margin-left: -10px;
+        margin-left: 55%;
+        font-size: 10px;
+    }
+    .logo-footer{
+        margin-left: -130%;
+        margin-top: 150px;
+    }
+    .slogan-footer{
+        margin-top: 250px;
+        font-size: 20px;
+        margin-left: -20px;
+        margin-left: 10px;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+    .fill-out-name input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-betrieb input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-ort input{
+        margin-top: 20px;
+        margin-left: -40px;
+    }
+    .fill-out-phone input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-anrufzeit input{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .fill-out-mail input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-mail label{
+        padding-right: 40px;
+    }
+    .fill-out-straße input{
+        margin-top: 20px;
+        margin-left: -40px;
+        
+    }
+    .fill-out-straße label{
+        padding-right: 40px;
+    }
+
+    .interesse-automaten {
+        display:inline-block;
+        
+    }
+    
+    .fill-out-automaten label{
+        font-size: 15px;
+    }
+    .fill-out-message label{
+        font-size: 15px;
+    }
+    .fill-out-button{
+        margin-left: 10%;
+    }
+} 

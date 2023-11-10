@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO Automaten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Raleway:ital,wght@1,200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fdc8bc306.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="company.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Poppins:wght@600&family=Raleway:ital,wght@1,200&family=Rubik:wght@300&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <div class="website-wrapper">
+        <header>
+            <div class="logo">
+                <img src="Logo/Leo Automaten logo for webdesign SVG.svg" alt="Leo Automaten Logo">
+            </div>
+            <div class="contact-info-header">
+                <div class="tel-header">
+                    <i class="fas fa-phone"></i> +49 176 63758701
+                </div>
+                <div class="mail-header">
+                    <a href="mailto:info@geile-warenautomaten.de" target="_self" title="This is my E-Mail">
+                        <i class="fas fa-envelope"></i> info@leo-automaten.de 
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-home">
+                <div class="select">
+                    <a href="homepage.html"><span class="selected">Startseite</span></a>
+                    <div class="caret"></div>
+                </div>
+                
+            </div> 
+            <div class="dropdown dropdown-about-us">
+                <div class="select">
+                    <span class="selected">Über uns</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <a href="company.html" target="_self"><li class="active">Das Unternehmen</li></a>
+                    <a href="aufstellgebiet.html" target="_self"><li>Aufstellgebiet</li></a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Automaten</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <a href="automatenübersicht.html"><li class="active">Automaten Übersicht</li></a>
+                    <a href="snackautomaten.html"><li>Snack Automaten</li></a>
+                    <a href="kaltgetränkeautomaten.html"><li>Kaltgetränke Automaten</li></a>
+                    <a href="kombiautomaten.html"><li>Kombi Automaten</li></a>
+                    <a href="heißgetränkeautomaten.html"><li>Heissgetränkeautomaten</li></a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <div class="select">
+                    <a href="service.html"><span class="selected">Dienstleistungen</span></a>
+                    <div class="caret"></div>
+                </div>
+                
+            </div>
+            
+            <div class="dropdown">
+                <div class="select">
+                    <a href="kontakt.html"><span class="selected">Kontakt</span></a>
+                    <div class="caret"></div>
+                </div>
+            </div>
+
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="homepage.html">Startseite</a></li>
+                    <li><a href="company.html">Das Unternehmen</a></li>
+                    <li><a href="aufstellgebiet.html">Aufstellgebiet</a></li>
+                    <li><a href="automatenübersicht.html">Automatenübersicht</a></li>
+                    <li><a href="snackautomaten.html">Snackautomaten</a></li>
+                    <li><a href="kaltgetränkeautomaten.html">Kaltgetränkeautomaten</a></li>
+                    <li><a href="heißgetränkeautomaten.html">Heißgetränkeautomaten</a></li>
+                    <li><a href="kombiautomaten.html">Kombiautomaten</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>  
+        </header>
+        <br>
+        <br>
+        <container class="das-unternehmen-container">
+            <div class="das-unternehmen-part1">
+                <div class="das-unternehmen-part1-titel">
+                    <span id="das-unternehmen-titel"><b>Das Unternehmen</b></span>
+                </div>           
+                <div class="das-unternehmen-text">
+                    <p>In einer Welt, die von der Schnelllebigkeit des modernen Lebens lebt, sind Effizienz und praktische </p>
+                    <p>Bequemlichkeit extrem wichtig. Im Zentrum dieser Revolution der Modernisierung stehen wir als </p>
+                    <p>Leo Automaten, ein dynamisches Automatenunternehmen, das mit der Vision gegründet wurde,</p>
+                    <p>das Leben einfacher und effizienter zu machen.</p>
+                </div>
+            </div> 
+            <div class="die-gründung-part1">
+                <div class="die-gründung-part1-titel">
+                    <span id="die-gründung-titel"><b>Die Gründung</b></span>
+                </div>           
+                <div class="die-gründung-text">
+                    <p>Leo Automaten begann mit einer einfachen, aber wirkungsvollen Idee:</p>
+                    <p>Wir wollen das alltägliche Leben so effektiv und praktisch wie möglich machen. </p>
+                    <p>Unser Gründer, ein visionärer Unternehmer mit einer Leidenschaft für Innovationen, machte sich</p>
+                    <p>daran, ein Automatenunternehmen zu gründen, das sich von allen anderen unterscheidet, und</p>
+                    <p>setzte diese Idee in der Metropole Berlin um. </p>
+                    
+                    
+                </div>
+            </div>
+            <div class="wachstum-innovation-part1">
+                <div class="wachstum-innovation-part1-titel">
+                    <span id="wachstum-innovation-titel"><b>Wachstum und Innovation</b></span>
+                </div>           
+                <div class="wachstum-innovation-text">
+                    <p>Mit dem Wachstum unseres Unternehmens wuchs auch unser Engagement für Innovationen.</p>
+                    <p>Wir gehören zu den ersten und einzigen Unternehmen, die bargeldlose Zahlungsoptionen und</p>
+                    <p> ein vielfältiges Produktangebot eingeführt haben.</p>
+                    <br>
+                    <p>In einer Welt, in der Nachhaltigkeit immer wichtiger wurde, übernahmen wir die Führung bei </p>
+                    <p>der Einführung umweltfreundlicher Automatenlösungen. Von energieeffizienten Automaten </p>
+                    <p>zum Recycling von Verpackungen hat das Unternehmen seine Verantwortung für die Umwelt</p>
+                    <p> erkannt und mit umweltbewussten Praktiken umgesetzt.</p>
+                </div>
+                
+            </div> 
+            <br>
+            <div class="zukunft-part1">
+                <div class="logo-big-image">
+                    <img src="/Logo/Leo Automaten logo for webdesign SVG.svg">
+                </div>
+                <div class="zukunft-part1-titel">
+                    <span id="zukunft-titel"><b>Ein Blick in die Zukunft</b></span>
+                </div>           
+                <div class="zukunft-text">
+                    <p>Heute stehen Leo Automaten als Symbol für Convenience, Innovation und Kompetenz.</p>
+                    <p>Unser Weg von einem Start-up-Unternehmen zu einem anerkannten Branchenführer war großartig,</p>
+                    <p>und unsere Geschichte wird sich weiterentwickeln. Wir sind bestrebt,  uns an die sich ständig ändernden</p>
+                    <p>Bedürfnisse unserer Kunden und der Umwelt anzupassen, um sicherzustellen, dass wir an der Spitze</p>
+                    <p>der Automatenindustrie bleiben.</p>
+                    <br>
+                    <p>Während wir uns weiterentwickeln, bleibt unser Ziel, das Leben durch praktische Lösungen zu vereinfachen,</p>
+                    <p>unverändert in Sicht. Mit einem starken Fundament aus Vision, Innovation und gemeinnützigem Engagement</p>
+                    <p>gestalten wir weiterhin die Zukunft der Automatenwirtschaft, einen Automaten nach dem anderen.</p>
+                </div>
+            </div>
+        </container>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div class="contact-info-footer">
+                <div class="name-footer">
+                    LEO Automaten
+                </div>
+                
+                <div class="tel-footer">
+                    <i class="fa-solid fa-phone"></i> +49 176 63758701 
+                </div> 
+                <div class="mail-footer">
+                    <i class="fa-solid fa-envelope"></i> info@leo-automaten.de
+                </div>
+            </div> 
+            <div class="more-infos-footer">
+                <div class="weitere-informationen">
+                    <span>Weitere Informationen:</span>
+                </div>
+                <div class="startseite">
+                    <a href="homepage.html"><span>STARTSEITE</span></a>
+                </div>
+                <div class="impressum">
+                    <a href="impressum.html"><span>Impressum</span></a>
+                </div> 
+                <div class="datenschutz">
+                    <a href="datenschutz.html"><span>Datenschutz</span></a>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <a href="homepage.html"><img src="/Logo/Leo Automaten logo for webdesign SVG.svg"></a>
+            </div>
+            <div class="slogan-footer">
+                <span><b>Life made convenient</b></span>
+            </div>
+        </footer>
+    </div> 
+    <script src="scripthome.js"></script> 
+    <script src="scriptbar.js"></script>
+</body>

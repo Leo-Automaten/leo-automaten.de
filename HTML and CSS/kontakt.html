@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO Automaten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Raleway:ital,wght@1,200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fdc8bc306.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pathway+Extreme:ital,opsz,wght@1,8..144,700&family=Poppins:wght@600&family=Raleway:ital,wght@1,200&family=Rubik:wght@300&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <div class="website-wrapper">
+        <header>
+            <div class="logo">
+                <img src="Logo/Leo Automaten logo for webdesign SVG.svg" alt="Leo Automaten Logo">
+            </div>
+            <div class="contact-info-header">
+                <div class="tel-header">
+                    <i class="fas fa-phone"></i> +49 176 63758701
+                </div>
+                <div class="mail-header">
+                    <a href="mailto:info@geile-warenautomaten.de" target="_self" title="This is my E-Mail">
+                        <i class="fas fa-envelope"></i> info@leo-automaten.de 
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-home">
+                <div class="select">
+                    <a href="homepage.html"><span class="selected">Startseite</span></a>
+                    <div class="caret"></div>
+                </div>
+                
+            </div> 
+            <div class="dropdown dropdown-about-us">
+                <div class="select">
+                    <span class="selected">Über uns</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <a href="company.html" target="_self"><li class="active">Das Unternehmen</li></a>
+                    <a href="aufstellgebiet.html" target="_self"><li>Aufstellgebiet</li></a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Automaten</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <a href="automatenübersicht.html"><li class="active">Automaten Übersicht</li></a>
+                    <a href="snackautomaten.html"><li>Snack Automaten</li></a>
+                    <a href="kaltgetränkeautomaten.html"><li>Kaltgetränke Automaten</li></a>
+                    <a href="kombiautomaten.html"><li>Kombi Automaten</li></a>
+                    <a href="heißgetränkeautomaten.html"><li>Heissgetränkeautomaten</li></a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <div class="select">
+                    <a href="service.html"><span class="selected">Dienstleistungen</span></a>
+                    <div class="caret"></div>
+                </div>
+                
+            </div>
+           
+            <div class="dropdown">
+                <div class="select">
+                    <a href="kontakt.html"><span class="selected">Kontakt</span></a>
+                    <div class="caret"></div>
+                </div>
+            </div>
+
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="homepage.html">Startseite</a></li>
+                    <li><a href="company.html">Das Unternehmen</a></li>
+                    <li><a href="aufstellgebiet.html">Aufstellgebiet</a></li>
+                    <li><a href="automatenübersicht.html">Automatenübersicht</a></li>
+                    <li><a href="snackautomaten.html">Snackautomaten</a></li>
+                    <li><a href="kaltgetränkeautomaten.html">Kaltgetränkeautomaten</a></li>
+                    <li><a href="heißgetränkeautomaten.html">Heißgetränkeautomaten</a></li>
+                    <li><a href="kombiautomaten.html">Kombiautomaten</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>  
+        </header>
+        <br>
+        <div class="fill-out-form-contact">
+                
+                <form action="https://formspree.io/f/xyyqbgre" method="POST">
+                    <div class="fill-out-betrieb">
+                        <label for="betrieb">Ihr Betrieb:</label>
+                        <input type="text" id="betrieb" name="betrieb" required>
+                    </div>
+                    <div class="fill-out-name">
+                        <label for="name">Name, Vorname:</label>
+                        <input type="text" id="name" name="name"  required>
+                    </div>
+                    <div class="fill-out-ort">
+                        <label for="ort">PLZ / Ort:</label>
+                        <input type="text" id="ort" name="ort" required> 
+                    </div>
+                    <div class="fill-out-rückruf">
+                        <input type="radio" id="rückruf" name="title" >
+                        <label for="rückruf">Ich bitte um Rückruf</label>
+                    </div>
+                    <div class="fill-out-phone">
+                        <label for="phone">Ihre Telefonnummer:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="fill-out-anrufzeit">
+                        <label for="anrufzeit">Ihre gewünschte Anrufzeit:</label>
+                        <input type="text" id="anrufzeit" name="anrufzeit" >
+                    </div>
+                    <div class="fill-out-kontakt-mail">
+                        <input type="radio" id="kontakt-mail" name="title">
+                        <label for="kontakt-mail">Ich wünsche Kontakt per E-Mail</label>
+                    </div> 
+                    <div class="fill-out-mail">
+                        <label for="mail">Email:</label>
+                        <br>
+                        <input type="email" id="mail" name="mail" required>
+                    </div> 
+                    <div class="fill-out-schriftlich">
+                        <input type="radio" id="schriftlich" name="title" >
+                        <label for="schriftlich">Ich möchte gerne schriftlich benachrichtigt werden</label>
+                    </div> 
+                    <div class="fill-out-straße">
+                        <label for="straße">Adresse:</label>
+                        <br>
+                        <input type="text" id="straße" name="sraße" >
+                    </div>
+                    <br>
+                    <br>
+                    <div class="fill-out-automaten">
+                        <br>
+                        <label>Ich interessiere mich für:</label>
+                        <br>
+                        <div class="checkboxes-container">
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="heissgetraenkeautomaten" name="heissgetraenkeautomaten">
+                                <label for="heissgetraenkeautomaten">Heißgetränkeautomaten</label>
+                            </div>
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="kaltgetraenkeautomaten" name="kaltgetraenkeautomaten">
+                                <label for="kaltgetraenkeautomaten">Kaltgetränkeautomaten</label>
+                            </div>
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="snackautomaten" name="snackautomaten">
+                                <label for="snackautomaten">Snackautomaten</label>
+                            </div>
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="kombiautomaten" name="kombiautomaten">
+                                <label for="kombiautomaten">Kombiautomaten</label>
+                            </div>
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="fuellprodukte" name="fuellprodukte">
+                                <label for="fuellprodukte">Füllprodukte</label>
+                            </div>
+                            <br>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="vollservice" name="vollservice">
+                                <label for="vollservice">Vollservice</label>
+                            </div>
+                            <br>
+                           
+                        </div>
+                    </div>
+                    <br>
+                    <div class="fill-out-message">
+                        <label for="message">Ich habe folgende Fragen, Wünsche oder Anregungen:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <br>
+                    <div class="fill-out-button">
+                        <button type="submit">Formular absenden</button>
+                    </div>
+                </form> 
+                <br>
+                <br>
+                <br> 
+            </div>
+            <br>
+            <br>
+        <footer>
+            <div class="contact-info-footer">
+                <div class="name-footer">
+                     LEO Automaten
+                </div>
+               
+                <div class="tel-footer">
+                    <i class="fa-solid fa-phone"></i> +49 176 63758701 
+                </div> 
+                <div class="mail-footer">
+                    <i class="fa-solid fa-envelope"></i> info@leo-automaten.de
+                </div>
+            </div> 
+            <div class="more-infos-footer">
+                <div class="weitere-informationen">
+                    <span>Weitere Informationen:</span>
+                </div>
+                <div class="startseite">
+                    <a href="homepage.html"><span>STARTSEITE</span></a>
+                </div>
+                <div class="impressum">
+                    <a href="impressum.html"><span>Impressum</span></a>
+                </div> 
+                <div class="datenschutz">
+                    <a href="datenschutz.html"><span>Datenschutz</span></a>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <a href="homepage.html"><img src="/Logo/Leo Automaten logo for webdesign SVG.svg"></a>
+            </div>
+            <div class="slogan-footer">
+                <span><b>Life made convenient</b></span>
+            </div> 
+        </footer>   
+    </div>
+        <script src="scripthome.js"></script>
+        <script src="scriptbar.js"></script>
+</body>
